@@ -1,0 +1,51 @@
+/* 
+Website Colors:
+------------------------
+#00568c
+#008e66
+#ffffff
+#3d3d3d
+
+*/
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    max-width: 1250px;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+.header {
+    width: 100%;
+    background: linear-gradient(115deg, #00568c, #008e66);
+    color: #ffffff;
+    top: 0;
+    padding: 1rem 0;
+    flex-direction: row;
+}
+
+#logo {
+    height: 45px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+li {
+    list-style: none;
+    align-items: center;
+    display: list-item;
+}
+
+li a {
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+}
