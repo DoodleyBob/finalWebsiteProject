@@ -14,3 +14,35 @@ body{
     line-height: 1.6;
     border: 0;
 }
+
+header {
+    margin: 10px;
+    padding: 0 2rem;
+    
+}
+
+header h1 {
+    font-size: 35px;
+}
+
+header ul {
+    text-align: end;
+}
+
+.navbar {
+    background: linear-gradient(135deg, #00568c, #008e66);
+    height: 200px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+.hero {
+    margin-top: 150px;
+}
+
+

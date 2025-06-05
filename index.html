@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Project Website || Elijah Snyder</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header id="header" style="height: 82px;">
+    <header id="header" style="height: 82px;" class="navbar">
         <nav>
-            <div class="logo">
-                <img src="images/CISLogo.png" alt="Computer & Info Science Logo" style="height: 75px; width: 100pxx;">                    <h1>Computer & Information Science</h1>
-            </div>
+            <h1>Computer & Information Science</h1>
             
             <ul> 
                 <li><a href="#home">Home</a></li>
@@ -22,33 +21,133 @@
             </ul>
         </nav>
     </header>
+    
     <main>
 
-        <div id="home" class="hero">
+        <section id="home" class="hero">
             <h2>Web Design Excellence since 2025</h2>
             <br>
             <p>We create stunning, responsive websites that combine cutting-edge technology with exceptional user experience.</p>
             <h3>Explore our Services - <button>Click!</button></h3>
-        </div>
+        </section>
         
-        <div id="services">
+        <section id="services">
+            <div class="subHeader">
+                <h2>Our Services</h2>
+            </div>
 
-        </div>
+            <div class="services">
+                <h3>Responsive Web Design</h3>
+                <hr>
+                <p>We create website that look amazing on all devices using the latest HTML5 semantic tags and CSS grid layouts. Our Designs follow best practices for accessibility and user experience.</p>
+            </div>
 
-        <div id="about">
+            <div class="services">
+                <h3>Interactive Development</h3>
+                <hr>
+                <p>Using advanced CSS selectors, animations, and transitions, we build engaging websites with hover effects, smooth scrolling, and dynamic content that responds to user interaction.</p>
+            </div>
 
-        </div>
+            <div class="services">
+                <h3>Multi-Page Architecture</h3>
+                <hr>
+                <p>We organize complex websites into multiple files for better maintainability, faster loading times, and improved SEO performance. Clean, organized code following the DRY principle.</p>
+            </div>
 
-        <div id="portfolio">
+        </section>
 
-        </div>
+        <section id="about">
+            <div class="subHeader">
+                <h2>Our Technology Stack</h2>
+            </div>
 
-        <div id="contact">
+            <p>We use cutting-edge technologies to deliver exceptional results:</p>
 
-        </div>
+            <div class="techno">HTML5</div>
+            <div class="techno">CSS3</div>
+            <div class="techno">JavaScript</div>
+            <div class="techno">Responsive Design</div>
+            <div class="techno">CSS Grid</div>
+            <div class="techno">Flexbox</div>
+            <div class="techno">Animations</div>
+            <div class="techno">Semantic HTML</div>
+
+        </section>
+
+        <section id="portfolio">
+            <div class="subHeader">
+                <h2>Interactive Demonstrations</h2>
+            </div>
+
+            <div class="demo">
+                <h3>CSS Animations & transitions</h3>
+                <p>Hover over the box below to see smooth transitions and transformations:</p>
+                <div>
+                    <div class="box"></div>
+                    <h4>Hover Me!</h4>
+                </div>
+            </div>
+
+            <div class="demo">
+                <h3>Visibility Property Demo</h3>
+                <p>Click the button to toggle element visibility: (notice it still takes up space):</p>
+                <button class="visibility">Toggle Visibility</button>
+                <div>This element demonstrates the visibility property! When hidden, it still occupies space in the layout.</div>
+            </div>
+
+            <div class="demo">
+                <h3>Box Model Demonstration</h3>
+                <p>Hover to see padding, margin, and border changes:</p>
+                <div class="boxModel">
+                    <h5>Box Model Demo</h5>
+                    <p>Margin: 20px | Border: 5px | Padding: 20px</p>
+                </div>
+            </div>
+
+            <div class="demo">
+                <h3>Embedded Content with IFrames</h3>
+                <p>Here's an example of embedded external content:</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.7749449563503!2d-74.99187649790457!3d44.731974210045266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc5d49b5e03a9f%3A0xaf7b7b60e3215973!2sSeaway%20Area%20Tech%20Center!5e0!3m2!1sen!2sus!4v1749141863299!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>IFrames are useful for embedding maps, videos, or other external content while maintaining security isolation.</p>
+
+            </div>
+
+            <div class="demo">
+                <h3>Advanced CSS Selectors</h3>
+                <p>This project demonstrates various selector combinations:</p>
+                <br>
+                <ul>
+                    <li><b>Multi-selectors:</b> h1, h2, h3 { font-family: Georgia }</li>
+                    <li><b>Child Selectors:</b> h3 for direct children</li>
+                    <li><b>Pseudo-selectors:</b> :nth-child(even) for alternating styles</li>
+                    <li><b>Hover effects:</b> Interactive elements throughout the site</li>
+                    <li><b>Focus states:</b> Accessible navigation and form elements</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="subHeader">
+                <h2>Get In Touch</h2>
+            </div>
+            <br>
+            <p>Ready to start your next we project? Let's discuss how we can help bring your vision to life.</p>
+            <br>
+            <p class="contactInfo"><b>Email:</b> elijahsny06@gmail.com</p>
+            <p class="contactInfo"><b>Address:</b> 2262 Co Rd 49, Winthrop, NY 13697</p>
+        </section>
     </main>
     <footer>
-    
+        <nav>
+            <button><a href="#home">Home</a></button>
+            <button><a href="#services">Services</a></button>
+            <button><a href="#about">About</a></button>
+            <button><a href="#portfolio">Portfolio</a></button>
+            <button><a href="#contact">Contact</a></button>
+        </nav>
+
+        <p>&copy; 2024 Computer & Information Science. All rights reserved. <br>
+        Built with HTML5 semantic tags, advanced CSS selectors, animations, and responsive design principles.</p>
     </footer>
 </body>
 </html>
