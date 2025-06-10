@@ -16,11 +16,11 @@
             
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ms-auto"> 
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -33,52 +33,56 @@
                 <h2>Web Design Excellence since 2025</h2>
                 <br>
                 <p>We create stunning, responsive websites that combine cutting-edge technology with exceptional user experience.</p>
-                <h3>Explore our Services - <button>Click!</button></h3>
+                <button style="background-color: black;"><a href="#services" style="text-decoration: none; color: white;">Explore Our Services</a></button>
             </div>
         </section>
-        
+        <br><br>
+
         <section id="services">
             <div class="subHeader">
                 <h2>Our Services</h2>
-            </div>
+            </div><br>
 
             <div class="services">
-                <h3>Responsive Web Design</h3>
-                <hr>
+                <article class="serviceCard">
+                <h3 style="font-size: 25px;">Responsive Web Design</h3> 
+                <hr style="color: #008e66">
                 <p>We create website that look amazing on all devices using the latest HTML5 semantic tags and CSS grid layouts. Our Designs follow best practices for accessibility and user experience.</p>
-            </div>
+                </article>
 
-            <br><br>
-            <div class="services">
-                <h3>Interactive Development</h3>
-                <hr>
+                <article class="serviceCard2">
+                <h3 style="font-size: 25px;">Interactive Development</h3>
+                <hr style="color: #008e66">
                 <p>Using advanced CSS selectors, animations, and transitions, we build engaging websites with hover effects, smooth scrolling, and dynamic content that responds to user interaction.</p>
-            </div>
+                </article>
 
-            <div class="services">
-                <h3>Multi-Page Architecture</h3>
-                <hr>
+                <article class="serviceCard3">
+                <h3 style="font-size: 25px;">Multi-Page Architecture</h3>
+                <hr style="color: #008e66;">
                 <p>We organize complex websites into multiple files for better maintainability, faster loading times, and improved SEO performance. Clean, organized code following the DRY principle.</p>
+                </article>
             </div>
-
-        </section>
+    </section>
+    <br><br>
 
         <section id="about">
             <div class="subHeader">
                 <h2>Our Technology Stack</h2>
             </div>
 
-            <p>We use cutting-edge technologies to deliver exceptional results:</p>
-
-            <div class="techno">HTML5</div>
-            <div class="techno">CSS3</div>
-            <div class="techno">JavaScript</div>
-            <div class="techno">Responsive Design</div>
-            <div class="techno">CSS Grid</div>
-            <div class="techno">Flexbox</div>
-            <div class="techno">Animations</div>
-            <div class="techno">Semantic HTML</div>
-
+            <p style="margin-top: 25px; margin-left: 75px;">We use cutting-edge technologies to deliver exceptional results:</p>
+            <div class="technoGrid">
+                <div class="techno">HTML5</div>
+                <div class="techno">CSS3</div>
+                <div class="techno">JavaScript</div>
+                <div class="techno">Responsive Design</div>
+            </div>
+            <div class="technoGrid">
+                <div class="techno">CSS Grid</div>
+                <div class="techno">Flexbox</div>
+                <div class="techno">Animations</div>
+                <div class="techno">Semantic HTML</div>
+            </div>
         </section>
 
         <section id="portfolio">

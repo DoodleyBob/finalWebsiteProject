@@ -19,15 +19,15 @@ body{
 header {
     margin: 0;
     padding: 0;
-    position: fixed;
+    position: sticky;
     top: 0;
     background: linear-gradient(135deg, #00568c, #008e66);
     width: 100%;
+    opacity: .95;
 }
 
 header h1 {
     font-size: 25px;
-    color: #ffffff;
     font-weight: bold;
 }
 
@@ -42,6 +42,7 @@ nav {
 
 ul li{
     list-style: none;     
+    position: relative;
 }
 
 
@@ -50,23 +51,122 @@ ul li{
 
 /* End of Header Section */
 
-
+/* Hero Section */
 .hero {
     display: flex;
-    margin-top: 82px;
     border: 1px solid black;
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-direction: column;
     background-image: url(images/coding.jpg);
-    height: 300px;
+    height: 350px;
     color: #fff;
     background-repeat: no-repeat;
     background-size: cover;
 
 }
 
+/* End of Hero Section */
 
 
+/* Services Section */
+.subHeader {
+    text-align: center;
+}
 
+.subHeader h2 {
+    font-size: 40px;
+    color: #00568c;
+}
+
+.services {
+    width: 100%;
+    height: 245.19px;
+    display: flex;
+}
+
+.serviceCard h3, .serviceCard2 h3, .serviceCard3 h3 {
+    color: #00568c;
+}
+
+.serviceCard p, .serviceCard2 p, .serviceCard3 p {
+    font-size: 15px;
+}
+
+.serviceCard {
+    background-color: #fff;
+    width: 350px;
+    padding: 2rem;
+    margin-left: 100px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px gray;
+    transition: all 0.3s ease;
+}
+
+.serviceCard:hover, .serviceCard2:hover, .serviceCard3:hover {
+    border-color: #008e66;
+    transition: 0.6s ease;
+}
+
+.serviceCard2 {
+    background-color: #fff;
+    width: 350px;
+    padding: 2rem;
+    margin-left: 100px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px gray;
+    transition: all 0.3s ease;
+}
+
+.serviceCard3 {
+    background-color: #fff;
+    width: 350px;
+    padding: 2rem;
+    justify-content: center;
+    margin-left: 100px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px gray;
+    transition: all 0.3s ease;
+}
+
+/* End of Services Section */
+
+
+/* About Section */
+
+.technoGrid {
+    display: flex;
+    width: 100%;
+    height: 65.25px;
+    gap: 1rem;
+    margin-left: 30px;
+}
+
+.techno {
+    color: #fff;
+    background: linear-gradient(135deg, #00568c, #008e66);
+    width: 332px;
+    height: 58px;
+    text-align: center;
+    padding: 1rem;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+.techno:hover {
+    color: #fff;
+    background: linear-gradient(135deg, #00568c, #008e66);
+    width: 345px;
+    height: 65px;
+    text-align: center;
+    padding: 1rem;
+    flex-direction: column;
+    border-radius: 8px;
+    transition: 1s ease;
+}
+
+/* End of About Section */
