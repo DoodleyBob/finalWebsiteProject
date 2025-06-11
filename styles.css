@@ -31,18 +31,17 @@ header h1 {
     font-weight: bold;
 }
 
-nav {
-    display: flex;
-}
-
-.navbar-brand, .navlink {
-    color: #fff !important;
+nav li a {
+    color: #fff;
+    text-decoration: none;
+    float: right;
+    margin-right: 15px;
+    font-size: 10px;
 }
 
 
 ul li{
-    list-style: none;     
-    position: relative;
+    list-style: none; 
 }
 
 
@@ -170,3 +169,108 @@ ul li{
 }
 
 /* End of About Section */
+
+
+/* Demonstrations Section */
+
+.demo {
+    justify-content: center;
+    text-align: center;
+    margin-top: 25px;
+
+}
+.container{
+  width: fit-content;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: #00568c;
+    margin-left: 5px;
+    border-radius: 10px;
+}
+
+.box:hover {
+    border-radius: 50%;
+    transform: rotate(45deg);
+    transition: .6s ease;
+    background-color: #008e66;
+}
+
+#visiText {
+    display: flex;
+    width: 85%;
+    background-color: #008e66;
+    border-radius: 8px;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    margin-left: 6.5%;
+    margin-top: 10px;
+    transition: all .5s ease;
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+.boxModel {
+    width: 85%;
+    background-color: #008e66;
+    border: 2px solid #00568c;
+    color: #fff;
+    padding: 10px;
+    margin-left: 6.5%;
+    text-align: center;
+    justify-content: center;
+    scale: 0.8px;
+}
+
+.boxModel:hover {
+    width: 85%;
+    background-color: #008e66;
+    border: 5px solid #00568c;
+    color: #fff;
+    padding: 20px;
+    margin: 20px;
+    margin-left: 6.5%;
+    text-align: center;
+    justify-content: center;
+    scale: 0.8px;
+    transition: all .5s ease;
+}
+
+
+#selectors {
+    background-color: rgb(235, 235, 235);
+    width: 85%;
+    margin-left: 6.5%;
+    border-radius: 8px;
+}
+
+#contact {
+    text-align: center;
+}
+
+footer{
+    background-color: rgb(21, 21, 21);
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    margin-left: 30%;
+}
+
+footer nav a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    margin-left: 5%;
+}
+
+/* End of Demonstrations Section */
